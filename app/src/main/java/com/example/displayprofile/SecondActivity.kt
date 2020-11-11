@@ -22,8 +22,8 @@ class SecondActivity : AppCompatActivity() {
 
         calendarView.setOnDateChangeListener {view, year, month, dayOfMonth ->
             val date = dayOfMonth.toString() + "−" + (month + 1) + "−" + year
-            val selectedDate = "01/01/2002"
-            calendarView.setDate(SimpleDateFormat("dd/MM/yyyy").parse(selectedDate).time, true, true)
+            val selectedDate = "2002"
+            calendarView.setDate(SimpleDateFormat("yyyy").parse(selectedDate).time, true, true)
             dateView.text = date
         }
 
